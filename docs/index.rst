@@ -2,8 +2,6 @@ Overview
 ========
 IdentityModel is a family of libraries for building OAuth 2.0 and OpenID Connect clients.
 
-It consists of:
-
 IdentityModel
 -------------
 Base library for OIDC and OAuth 2.0 related protocol operations and constants and other misc helpers (.NET Standard 2.0 / .NET Framework >4.6.1).
