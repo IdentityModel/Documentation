@@ -10,7 +10,7 @@ Base library for OIDC and OAuth 2.0 related protocol operations and constants an
 
 * github https://github.com/IdentityModel/IdentityModel
 * nuget https://www.nuget.org/packages/IdentityModel/
-* CI builds https://www.myget.org/F/identity/
+* CI builds https://github.com/orgs/IdentityModel/packages
 
 IdentityModel.AspNetCore
 ------------------------
@@ -18,7 +18,7 @@ ASP.NET Core specific helper library for token management.
 
 * github https://github.com/IdentityModel/IdentityModel.AspNetCore
 * nuget https://www.nuget.org/packages/IdentityModel.AspNetCore/
-* CI builds https://www.myget.org/F/identity/
+* CI builds https://github.com/orgs/IdentityModel/packages
 
 IdentityModel.AspNetCore.OAuthIntrospection
 -------------------------------------------
@@ -26,7 +26,7 @@ OAuth 2.0 token introspection authentication handler for ASP.NET Core.
 
 * github https://github.com/IdentityModel/IdentityModel.AspNetCore.OAuthIntrospection
 * nuget https://www.nuget.org/packages/IdentityModel.AspNetCore.OAuthIntrospection/
-* CI builds https://www.myget.org/F/identity/
+* CI builds https://github.com/orgs/IdentityModel/packages
 
 IdentityModel.OidcClient
 ------------------------
@@ -34,7 +34,7 @@ IdentityModel.OidcClient
 
 * github https://github.com/IdentityModel/IdentityModel.OidcClient
 * nuget https://www.nuget.org/packages/IdentityModel.OidClient
-* CI builds https://www.myget.org/F/identity/
+* CI builds https://github.com/orgs/IdentityModel/packages
 
 oidc-client.js
 --------------
