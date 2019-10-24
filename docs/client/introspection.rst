@@ -15,7 +15,7 @@ The following code sends a reference token to an introspection endpoint::
         Token = accessToken
     });
 
-The response is of type ``IntrospectionResponse`` and has properties for the standard response parameters.
+The response is of type ``TokenIntrospectionResponse`` and has properties for the standard response parameters.
 You also have access to the the raw response as well as to a parsed JSON document 
 (via the ``Raw`` and ``Json`` properties).
 
