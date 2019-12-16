@@ -84,4 +84,6 @@ You can use use one of the various ways to obtain an HTTP client with the handle
         }
     }
 
+.. image:: images/worker.gif
+
 Full sample can be found in the samples folder.
