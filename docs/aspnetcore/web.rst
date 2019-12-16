@@ -4,10 +4,10 @@ In web applications you might either want to call APIs using the client identity
 
 For user centric scenarios, this library operates under a couple of assumptions by default:
 
-* you are using the OpenID Connect to authenticate the user
-    * the OpenID Connect provider is also your token service for access tokens
-* you are requesting access and refresh tokens and are using a flow that allows to refresh tokens (e.g. code flow)
-* you use the ``SaveTokens`` option to store the access and refresh token in the authentication session
+- you are using the OpenID Connect to authenticate the user
+- the OpenID Connect provider is also your token service for access tokens
+- you are requesting access and refresh tokens and are using a flow that allows to refresh tokens (e.g. code flow)
+- you use the ``SaveTokens`` option to store the access and refresh token in the authentication session
 
 If all these pre-conditions are met, the token management plumbing will infer server endpoints, client ID and secret and other configuration 
 settings from the OpenID Connect handler, and all you need to add is::
@@ -16,8 +16,8 @@ settings from the OpenID Connect handler, and all you need to add is::
 
 To interact with with the underlying services, this library adds two extension methods for ``HttpContext``:
 
-* ``GetUserAccessTokenAsync`` - retrieves current access token for user and refreshes it if it is expired (or expiring soon - can be configured)
-* ``RevokeUserRefreshTokenAsync`` - revokes the refresh token when it is not needed anymore
+- ``GetUserAccessTokenAsync`` - retrieves current access token for user and refreshes it if it is expired (or expiring soon - can be configured)
+- ``RevokeUserRefreshTokenAsync`` - revokes the refresh token when it is not needed anymore
 
 Same as with the client access token, you can also wire up an HTTP client that automatically uses the token management library:: 
 

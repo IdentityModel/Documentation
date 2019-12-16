@@ -20,7 +20,7 @@ You register the token service, client ID and secret in ``ConfigureServices``, e
 
 You can register multiple clients for one or more token services if you like. Just make sure you give every client a unique name.
 
-You can also customize the HTTP client that is used for requesting the tokens, by calling the ``ConfigureBackchannelHttpClient`` extension method, e.g.::
+You can also customize the HTTP client that is used for requesting the tokens by calling the ``ConfigureBackchannelHttpClient`` extension method, e.g.::
 
     services.AddAccessTokenManagement()
         .ConfigureBackchannelHttpClient()
@@ -31,7 +31,7 @@ You can also customize the HTTP client that is used for requesting the tokens, b
                 TimeSpan.FromSeconds(3)
             }));
 
-The above code wires the ``AccessTokenManagementService`` and the ``ClientAccessTokenCache`` in the DI system.
+The above code wires up the ``AccessTokenManagementService`` and the ``ClientAccessTokenCache`` in the DI system.
 The service is the main entry point, and features a method called ``GetClientAccessTokenAsync`` 
 (which you can also access via the HTTP context using ``HttpContext.GetClientAccessTokenAsync``).
 This method checks if a token for the client is cached, and if not requests one and caches it. The cache implementation can be replaced.
