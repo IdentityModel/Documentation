@@ -20,8 +20,20 @@ You register the token service, client ID and secret in ``ConfigureServices``, e
 
 You can register multiple clients for one or more token services if you like. Just make sure you give every client a unique name.
 
+You can also customize the HTTP client that is used for requesting the tokens, by calling the ``ConfigureBackchannelHttpClient`` extension method, e.g.::
+
+    services.AddAccessTokenManagement()
+        .ConfigureBackchannelHttpClient()
+            .AddTransientHttpErrorPolicy(policy => policy.WaitAndRetryAsync(new[]
+            {
+                TimeSpan.FromSeconds(1),
+                TimeSpan.FromSeconds(2),
+                TimeSpan.FromSeconds(3)
+            }));
+
 The above code wires the ``AccessTokenManagementService`` and the ``ClientAccessTokenCache`` in the DI system.
-The service is the main entry point, and features a method called ``GetClientAccessTokenAsync``.
+The service is the main entry point, and features a method called ``GetClientAccessTokenAsync`` 
+(which you can also access via the HTTP context using ``HttpContext.GetClientAccessTokenAsync``).
 This method checks if a token for the client is cached, and if not requests one and caches it. The cache implementation can be replaced.
 
 One piece of plumbing that automatically uses the token management service is the ``ClientAccessTokenHandler``, which is a delegating handler
@@ -37,6 +49,15 @@ The easiest way to register an HTTP client that uses the token management is by 
 You can pass in the name of your HTTP client, the name of the token service configuration (you can omit this if you only have one token client) 
 and additional customization. 
 This returns the typical builder for the HTTP client factory to add aditional handlers.
+
+It is also possible to add the handler to any HTTP client registration using the ``AddUserAccessTokenHandler`` extension method 
+(which optionally also takes a token client name), e.g. a typed client::
+
+    services.AddHttpClient<TypedUserClient>(client =>
+        {
+            client.BaseAddress = new Uri("https://demo.identityserver.io/api/");
+        })
+            .AddUserAccessTokenHandler();
 
 Usage
 -----

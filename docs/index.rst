@@ -71,7 +71,7 @@ JavaScript based implementation of the **OAuth 2.0 for browser-based application
 .. toctree::
    :maxdepth: 2
    :hidden:
-   :caption: IdentityModel for Worker and ASP.NET Core
+   :caption: IdentityModel for Workers and Web Apps
 
    aspnetcore/overview
    aspnetcore/worker
