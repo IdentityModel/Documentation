@@ -92,3 +92,7 @@ This registers an Http client with the factory, that you can use in your busines
     {
         client.BaseAddress = new Uri("https://demo.identityserver.io/api/");
     });
+
+.. image:: images/Web.gif
+
+Full sample can be found in the samples folder.
