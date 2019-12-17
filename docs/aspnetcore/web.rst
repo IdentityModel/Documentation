@@ -14,7 +14,7 @@ settings from the OpenID Connect handler, and all you need to add is::
 
     services.AddAccessTokenManagement();
 
-To interact with with the underlying services, this library adds two extension methods for ``HttpContext``:
+To interact with the underlying services, this library adds two extension methods for ``HttpContext``:
 
 - ``GetUserAccessTokenAsync`` - retrieves current access token for user and refreshes it if it is expired (or expiring soon - can be configured)
 - ``RevokeUserRefreshTokenAsync`` - revokes the refresh token when it is not needed anymore
