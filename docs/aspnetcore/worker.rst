@@ -86,4 +86,4 @@ You can use use one of the various ways to obtain an HTTP client with the handle
 
 .. image:: images/Worker.gif
 
-Full sample can be found in the samples `samples <https://github.com/IdentityModel/IdentityModel.AspNetCore>`_.
+Full sample can be found in the `samples <https://github.com/IdentityModel/IdentityModel.AspNetCore>`_.

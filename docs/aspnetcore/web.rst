@@ -95,4 +95,4 @@ This registers an Http client with the factory, that you can use in your busines
 
 .. image:: images/Web.gif
 
-Full sample can be found in the samples folder.
+Full sample can be found in the `samples <https://github.com/IdentityModel/IdentityModel.AspNetCore>`_.
