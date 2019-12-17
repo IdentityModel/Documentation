@@ -50,7 +50,7 @@ You can pass in the name of your HTTP client, the name of the token service conf
 and additional customization. 
 This returns the typical builder for the HTTP client factory to add aditional handlers.
 
-It is also possible to add the handler to any HTTP client registration using the ``AddUserAccessTokenHandler`` extension method 
+It is also possible to add the handler to any HTTP client registration using the ``AddClientAccessTokenHandler`` extension method 
 (which optionally also takes a token client name), e.g. a typed client::
 
     services.AddHttpClient<MyClient>(client =>
