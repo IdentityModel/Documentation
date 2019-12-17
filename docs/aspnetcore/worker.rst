@@ -53,11 +53,11 @@ This returns the typical builder for the HTTP client factory to add aditional ha
 It is also possible to add the handler to any HTTP client registration using the ``AddUserAccessTokenHandler`` extension method 
 (which optionally also takes a token client name), e.g. a typed client::
 
-    services.AddHttpClient<TypedUserClient>(client =>
-        {
-            client.BaseAddress = new Uri("https://demo.identityserver.io/api/");
-        })
-            .AddUserAccessTokenHandler();
+    services.AddHttpClient<MyClient>(client =>
+    {
+        client.BaseAddress = new Uri("https://demo.identityserver.io/api/");
+    })
+        .AddClientAccessTokenHandler();
 
 Usage
 -----
