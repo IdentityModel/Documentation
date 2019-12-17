@@ -76,6 +76,7 @@ JavaScript based implementation of the **OAuth 2.0 for browser-based application
    aspnetcore/overview
    aspnetcore/worker
    aspnetcore/web
+   aspnetcore/extensibility
    
 .. toctree::
    :maxdepth: 2
