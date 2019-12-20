@@ -14,7 +14,7 @@ You register the token service, client ID and secret in ``ConfigureServices``, e
                     Address = "https://demo.identityserver.io/connect/token",
                     ClientId = "m2m.short",
                     ClientSecret = "secret",
-                    Scope = "api"
+                    Scope = "api" // optional
                 });
             });
         });

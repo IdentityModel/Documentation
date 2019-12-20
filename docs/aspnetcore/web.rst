@@ -72,7 +72,12 @@ This registers an Http client with the factory, that you can use in your busines
         });
 
     // adds user and client access token management
-    services.AddAccessTokenManagement()
+    services.AddAccessTokenManagement(options =>
+    {
+        // client config is inferred from OpenID Connect settings
+        // if you want to specify scopes explicitly, do it here, otherwise the scope parameter will not be sent
+        options.Client.Scope = "api";
+    })
         .ConfigureBackchannelHttpClient()
             .AddTransientHttpErrorPolicy(policy => policy.WaitAndRetryAsync(new[]
             {
