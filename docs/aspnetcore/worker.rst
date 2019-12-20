@@ -9,11 +9,12 @@ You register the token service, client ID and secret in ``ConfigureServices``, e
         {
             services.AddAccessTokenManagement(options =>
             {
-                options.Client.Clients.Add("identityserver", new TokenClientOptions
+                options.Client.Clients.Add("identityserver", new ClientCredentialsTokenRequest
                 {
                     Address = "https://demo.identityserver.io/connect/token",
                     ClientId = "m2m.short",
-                    ClientSecret = "secret"
+                    ClientSecret = "secret",
+                    Scope = "api"
                 });
             });
         });
