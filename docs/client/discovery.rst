@@ -65,7 +65,7 @@ By default, comparison uses ordinal string comparison. To switch to Uri comparis
         Address = "https://demo.identityserver.io",
         Policy = 
         {
-            AuthorityValidationStrategy = AuthorityUrlValidationStrategy.Instance
+            AuthorityValidationStrategy = new AuthorityUrlValidationStrategy()
         }
     });
 
