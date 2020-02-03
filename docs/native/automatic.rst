@@ -1,6 +1,6 @@
 Automatic Mode
 ==============
-In automatic mode, you can encapsulate all browser interactions by implementing the ``IBrowser`` interface::
+In automatic mode, you can encapsulate all browser interactions by implementing the `IBrowser <https://github.com/IdentityModel/IdentityModel.OidcClient/blob/master/src/Browser/IBrowser.cs/>`_ interface::
 
     var options = new OidcClientOptions
     {
@@ -8,7 +8,7 @@ In automatic mode, you can encapsulate all browser interactions by implementing 
         ClientId = "native",
         RedirectUri = redirectUri,
         Scope = "openid profile api",
-        Browser = new SystemBrowser()
+        Browser = new SystemBrowser() 
     };
 
     var client = new OidcClient(options);
