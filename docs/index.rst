@@ -1,7 +1,6 @@
 Welcome to IdentityModel
 ========================
 
-
 .. image:: icon.jpg
    :align: center
 
