@@ -1,14 +1,20 @@
-Overview
-========
+Welcome to IdentityModel
+========================
+
 IdentityModel is a family of libraries for building OAuth 2.0 and OpenID Connect clients.
 
 IdentityModel
 -------------
-Base library for OIDC and OAuth 2.0 related protocol operations and constants and other misc helpers (.NET Standard 2.0 / .NET Framework >4.6.1).
+
+The base library for OIDC and OAuth 2.0 related protocol operations. It also provides useful constants and helper methods. 
+
+Currently we support .NET Standard 2.0 / .NET Framework >  4.6.1
 
 * github https://github.com/IdentityModel/IdentityModel
 * nuget https://www.nuget.org/packages/IdentityModel/
 * CI builds https://github.com/orgs/IdentityModel/packages
+
+The following libraries build on top of IdentityModel, and provide specific implementations for different applications:
 
 IdentityModel.AspNetCore
 ------------------------
