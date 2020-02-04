@@ -1,6 +1,10 @@
 Welcome to IdentityModel
 ========================
 
+
+.. image:: icon.jpg
+   :align: center
+
 IdentityModel is a family of libraries for building OAuth 2.0 and OpenID Connect clients.
 
 IdentityModel
