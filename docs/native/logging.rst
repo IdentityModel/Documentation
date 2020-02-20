@@ -1,6 +1,6 @@
 Logging
 =======
-OidcClient has support for the standard .NET logging facilities, e.g. using `Serilog <https://github.com/serilog/serilog>`_::
+OidcClient has support for the standard .NET logging facilities, e.g. using `Serilog <https://github.com/serilog/serilog-extensions-hosting>`_::
 
     var serilog = new LoggerConfiguration()
         .MinimumLevel.Verbose()
