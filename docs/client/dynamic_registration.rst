@@ -27,4 +27,4 @@ Before using the response, you should always check the ``IsError`` property to m
     if (response.IsError) throw new Exception(response.Error);
 
     var clientId = response.ClientId;
-    var secret = resopnse.ClientSecret;
+    var secret = response.ClientSecret;
