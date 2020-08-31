@@ -1,6 +1,6 @@
 Automatic Mode
 ==============
-In automatic mode, you can encapsulate all browser interactions by implementing the `IBrowser <https://github.com/IdentityModel/IdentityModel.OidcClient/blob/master/src/Browser/IBrowser.cs/>`_ interface::
+In automatic mode, you can encapsulate all browser interactions by implementing the `IBrowser <https://github.com/IdentityModel/IdentityModel.OidcClient/blob/main/src/OidcClient/Browser/IBrowser.cs>`_ interface::
 
     var options = new OidcClientOptions
     {
