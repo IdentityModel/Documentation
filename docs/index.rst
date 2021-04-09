@@ -27,12 +27,12 @@ ASP.NET Core specific helper library for token management.
 * nuget https://www.nuget.org/packages/IdentityModel.AspNetCore/
 * CI builds https://github.com/orgs/IdentityModel/packages
 
-IdentityModel.AspNetCore.OAuthIntrospection
+IdentityModel.AspNetCore.OAuth2Introspection
 -------------------------------------------
 OAuth 2.0 token introspection authentication handler for ASP.NET Core.
 
-* github https://github.com/IdentityModel/IdentityModel.AspNetCore.OAuthIntrospection
-* nuget https://www.nuget.org/packages/IdentityModel.AspNetCore.OAuthIntrospection/
+* github https://github.com/IdentityModel/IdentityModel.AspNetCore.OAuth2Introspection
+* nuget https://www.nuget.org/packages/IdentityModel.AspNetCore.OAuth2Introspection/
 * CI builds https://github.com/orgs/IdentityModel/packages
 
 IdentityModel.OidcClient
