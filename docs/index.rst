@@ -40,7 +40,7 @@ IdentityModel.OidcClient
 .NET based implementation of the **OAuth 2.0 for native apps** BCP. Certified by the OpenID Foundation.
 
 * github https://github.com/IdentityModel/IdentityModel.OidcClient
-* nuget https://www.nuget.org/packages/IdentityModel.OidClient
+* nuget https://www.nuget.org/packages/IdentityModel.OidcClient
 * CI builds https://github.com/orgs/IdentityModel/packages
 
 oidc-client.js
