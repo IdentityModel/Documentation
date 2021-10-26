@@ -40,7 +40,16 @@ This method checks if a token for the client is cached, and if not requests one 
 One piece of plumbing that automatically uses the token management service is the ``ClientAccessTokenHandler``, which is a delegating handler
 to plug-in to ``HttpClient``.
 
-The easiest way to register an HTTP client that uses the token management is by calling ``AddClientAccessTokenClient``::
+To add the handler to any HTTP client registration using the ``AddClientAccessTokenHandler`` extension method 
+(which optionally also takes a token client name), e.g. a typed client::
+
+    services.AddHttpClient<MyClient>(client =>
+    {
+        client.BaseAddress = new Uri("https://demo.identityserver.io/api/");
+    })
+        .AddClientAccessTokenHandler();
+
+In version 3 and below it's also possbile to register an HTTP client that uses the token management by calling ``AddClientAccessTokenClient``::
 
     services.AddClientAccessTokenClient("client", configureClient: client =>
     {
@@ -51,14 +60,7 @@ You can pass in the name of your HTTP client, the name of the token service conf
 and additional customization. 
 This returns the typical builder for the HTTP client factory to add aditional handlers.
 
-It is also possible to add the handler to any HTTP client registration using the ``AddClientAccessTokenHandler`` extension method 
-(which optionally also takes a token client name), e.g. a typed client::
-
-    services.AddHttpClient<MyClient>(client =>
-    {
-        client.BaseAddress = new Uri("https://demo.identityserver.io/api/");
-    })
-        .AddClientAccessTokenHandler();
+I
 
 Usage
 -----
