@@ -31,7 +31,7 @@ Custom elements (or elements not covered by the standard properties) can be acce
     var arrayValue = disco.TryGetStringArray("some_array_element");
     
     // returns JToken
-    var rawJson = disco.TryGetValue("some_element);
+    var rawJson = disco.TryGetValue("some_element");
 
 Discovery Policy
 ---------------
