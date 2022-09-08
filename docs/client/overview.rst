@@ -16,7 +16,7 @@ The following code snippet creates a request for a client credentials grant type
         Address = "https://demo.identityserver.io/connect/token",
         ClientId = "client",
         ClientSecret = "secret"
-    });
+    };
 
 While in theory you could now call ``Prepare`` (which internally sets the headers, body and address) and send the request via a plain ``HttpClient``,
 typically there are more parameters with special semantics and encoding required. That's why we provide extension methods to do the low level work.
