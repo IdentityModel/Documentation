@@ -21,7 +21,7 @@ Authorization Endpoint
 ----------------------
 For most cases, the `OAuth 2.0 <https://tools.ietf.org/html/rfc6749#section-3.1>`_ and `OpenID Connect <https://openid.net/specs/openid-connect-core-1_0.html#AuthorizationEndpoint>`_ authorization endpoint expects a GET request with a number of query string parameters.
 
-The ``CreateAuthorizeUrl`` extension method creats URLs for the authorize endpoint - it has support the most common parameters::
+The ``CreateAuthorizeUrl`` extension method creates URLs for the authorize endpoint - it has support the most common parameters::
 
     /// <summary>
     /// Creates an authorize URL.
