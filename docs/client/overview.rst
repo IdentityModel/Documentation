@@ -13,7 +13,7 @@ The following code snippet creates a request for a client credentials grant type
 
     var request = new ClientCredentialsTokenRequest
     {
-        Address = "https://demo.identityserver.io/connect/token",
+        Address = "https://demo.duendesoftware.com/connect/token",
         ClientId = "client",
         ClientSecret = "secret"
     };
@@ -39,7 +39,7 @@ It is your responsibility to setup and manage the lifetime of the ``HttpClient``
 
     var response = await client.RequestClientCredentialsTokenAsync(new ClientCredentialsTokenRequest
     {
-        Address = "https://demo.identityserver.io/connect/token",
+        Address = "https://demo.duendesoftware.com/connect/token",
         ClientId = "client",
         ClientSecret = "secret"
     });
@@ -50,7 +50,7 @@ You might want to use other techniques to obtain an ``HttpClient``, e.g. via the
 
     var response = await client.RequestClientCredentialsTokenAsync(new ClientCredentialsTokenRequest
     {
-        Address = "https://demo.identityserver.io/connect/token",
+        Address = "https://demo.duendesoftware.com/connect/token",
         ClientId = "client",
         ClientSecret = "secret"
     });

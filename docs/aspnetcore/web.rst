@@ -23,7 +23,7 @@ Same as with the client access token, you can also wire up an HTTP client that a
 
     services.AddUserAccessTokenClient("user_client", client =>
     {
-        client.BaseAddress = new Uri("https://demo.identityserver.io/api/");
+        client.BaseAddress = new Uri("https://demo.duendesoftware.com/api/");
     });
 
 This registers an Http client with the factory, that you can use in your business code to make API calls. A more complete configuration could look like this::
@@ -45,7 +45,7 @@ This registers an Http client with the factory, that you can use in your busines
         })
         .AddOpenIdConnect("oidc", options =>
         {
-            options.Authority = "https://demo.identityserver.io";
+            options.Authority = "https://demo.duendesoftware.com";
 
             options.ClientId = "interactive.confidential.short";
             options.ClientSecret = "secret";
@@ -89,13 +89,13 @@ This registers an Http client with the factory, that you can use in your busines
     // registers HTTP client that uses the managed user access token
     services.AddUserAccessTokenClient("user_client", client =>
     {
-        client.BaseAddress = new Uri("https://demo.identityserver.io/api/");
+        client.BaseAddress = new Uri("https://demo.duendesoftware.com/api/");
     });
 
     // registers HTTP client that uses the managed client access token
     services.AddClientAccessTokenClient("client", configureClient: client =>
     {
-        client.BaseAddress = new Uri("https://demo.identityserver.io/api/");
+        client.BaseAddress = new Uri("https://demo.duendesoftware.com/api/");
     });
 
 .. image:: images/Web.gif

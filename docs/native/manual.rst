@@ -4,7 +4,7 @@ In manual mode, OidcClient helps you with creating the necessary start URL and s
 
     var options = new OidcClientOptions
     {
-        Authority = "https://demo.identityserver.io",
+        Authority = "https://demo.duendesoftware.com",
         ClientId = "native",
         RedirectUri = redirectUri,
         Scope = "openid profile api"

@@ -11,7 +11,7 @@ Example::
 
     var client = new HttpClient();
 
-    var disco = await client.GetDiscoveryDocumentAsync("https://demo.identityserver.io");
+    var disco = await client.GetDiscoveryDocumentAsync("https://demo.duendesoftware.com");
     if (disco.IsError) throw new Exception(disco.Error);
 
 Standard elements can be accessed by using properties::
@@ -50,7 +50,7 @@ e.g. disabling the issuer name check::
 
     var disco = await client.GetDiscoveryDocumentAsync(new DiscoveryDocumentRequest
     {
-        Address = "https://demo.identityserver.io",
+        Address = "https://demo.duendesoftware.com",
         Policy = 
         {
             ValidateIssuerName = false
@@ -62,7 +62,7 @@ By default, comparison uses ordinal string comparison. To switch to Uri comparis
 
     var disco = await client.GetDiscoveryDocumentAsync(new DiscoveryDocumentRequest
     {
-        Address = "https://demo.identityserver.io",
+        Address = "https://demo.duendesoftware.com",
         Policy = 
         {
             AuthorityValidationStrategy = new AuthorityUrlValidationStrategy()
@@ -79,7 +79,7 @@ The ``DiscoveryCache`` class can help you with that.
 
 The following code will set-up the cache, retrieve the document the first time it is needed, and then cache it for 24 hours::
 
-    var cache = new DiscoveryCache("https://demo.identityserver.io");
+    var cache = new DiscoveryCache("https://demo.duendesoftware.com");
 
 You can then access the document like this::
 
