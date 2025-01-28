@@ -15,7 +15,7 @@ All other extensions methods ultimately call this method internally::
 
     var response = await client.RequestTokenAsync(new TokenRequest
     {
-        Address = "https://demo.identityserver.io/connect/token",
+        Address = "https://demo.duendesoftware.com/connect/token",
         GrantType = "custom",
 
         ClientId = "client",
@@ -45,7 +45,7 @@ The ``RequestClientCredentialsToken`` extension method has convenience propertie
 
     var response = await client.RequestClientCredentialsTokenAsync(new ClientCredentialsTokenRequest
     {
-        Address = "https://demo.identityserver.io/connect/token",
+        Address = "https://demo.duendesoftware.com/connect/token",
         
         ClientId = "client",
         ClientSecret = "secret",
@@ -58,7 +58,7 @@ The ``RequestPasswordToken`` extension method has convenience properties for the
 
     var response = await client.RequestPasswordTokenAsync(new PasswordTokenRequest
     {
-        Address = "https://demo.identityserver.io/connect/token",
+        Address = "https://demo.duendesoftware.com/connect/token",
 
         ClientId = "client",
         ClientSecret = "secret",

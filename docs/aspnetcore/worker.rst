@@ -11,7 +11,7 @@ You register the token service, client ID and secret in ``ConfigureServices``, e
             {
                 options.Client.Clients.Add("identityserver", new ClientCredentialsTokenRequest
                 {
-                    Address = "https://demo.identityserver.io/connect/token",
+                    Address = "https://demo.duendesoftware.com/connect/token",
                     ClientId = "m2m.short",
                     ClientSecret = "secret",
                     Scope = "api" // optional
@@ -44,7 +44,7 @@ The easiest way to register an HTTP client that uses the token management is by 
 
     services.AddClientAccessTokenHttpClient("client", configureClient: client =>
     {
-        client.BaseAddress = new Uri("https://demo.identityserver.io/api/");
+        client.BaseAddress = new Uri("https://demo.duendesoftware.com/api/");
     });
 
 You can pass in the name of your HTTP client, the name of the token service configuration (you can omit this if you only have one token client) 
@@ -56,7 +56,7 @@ It is also possible to add the handler to any HTTP client registration using the
 
     services.AddHttpClient<MyClient>(client =>
     {
-        client.BaseAddress = new Uri("https://demo.identityserver.io/api/");
+        client.BaseAddress = new Uri("https://demo.duendesoftware.com/api/");
     })
         .AddClientAccessTokenHandler();
 
